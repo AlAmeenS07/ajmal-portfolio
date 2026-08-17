@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Ajmal Ar - Expert Video Editor specializing in color grading, motion tracking, and sound design.">
+    <title>Ajmal Ar | Visual Storyteller & Video Editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Added Playfair Display for elegant quotes -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <a href="#home" class="logo">AJMAL<span class="highlight">.AR</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <!-- Decorative background shapes for creativity -->
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="bg-grid"></div>
+
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="fade-in">Mastering the <span class="highlight">Invisible Art</span></h1>
+                
+                <blockquote class="hero-quote fade-in">
+                    "Every cut is a choice. Every frame tells a story. Editing is where the rhythm is found."
+                </blockquote>
+                
+                <p class="fade-in">Crafting narratives frame by frame. From rough cuts to final renders, I manipulate pixels and audio waveforms to tell compelling stories that captivate and resonate.</p>
+                
+                <div class="cta-buttons fade-in">
+                    <a href="#portfolio" class="btn btn-primary">View Final Renders</a>
+                    <a href="#contact" class="btn btn-secondary">Collaborate</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual fade-in">
+                <div class="image-wrapper">
+                    <img src="ajmal-bmw.jpeg" alt="Ajmal Ar with BMW" class="hero-image enhanced-image">
+                    
+                    <!-- Creative floating elements -->
+                    <!-- <div class="floating-element element-1 glass-card">
+                        <span class="icon"><i data-lucide="palette"></i></span> Rec.709 Mastered
+                    </div>
+                    <div class="floating-element element-2 glass-card">
+                        <span class="icon"><i data-lucide="scissors"></i></span> J-Cuts & L-Cuts
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="about-header text-center fade-in">
+                <h2 class="section-title">Meet the <span class="highlight">Editor</span></h2>
+                <p class="section-subtitle">Obsessed with the perfect cut.</p>
+            </div>
+            
+            <div class="about-creative-grid">
+                <!-- Text Content -->
+                <div class="about-content fade-in">
+                    <h3 class="about-heading">I thrive in the <span class="highlight-text">timeline.</span></h3>
+                    <p>I am Ajmal Ar, a passionate video editor dedicated to cinematic perfection. Blending technical precision with creative vision, my workspace is a playground of seamless J-Cuts, L-Cuts, and precise Keyframing.</p>
+                    <p>Whether it's matching color spaces (Rec.709 is my native tongue) or finding the perfect Foley for that impactful transition, I ensure every single frame serves the story.</p>
+                    
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <span class="stat-num">4K+</span>
+                            <span class="stat-label">Renders</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">∞</span>
+                            <span class="stat-label">Creativity</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">24</span>
+                            <span class="stat-label">FPS Magic</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fun / Creative Visual (Timeline UI Mockup) -->
+                <div class="about-visual fade-in">
+                    <div class="timeline-mockup glass-card">
+                        <div class="mockup-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="mockup-title">ajmal_master_sequence.prproj</span>
+                        </div>
+                        <div class="mockup-body">
+                            <!-- Playback viewer -->
+                            <div class="viewer-screen">
+                                <div class="play-indicator"><i data-lucide="play" color="white" fill="white"></i></div>
+                                <div class="timecode">00:12:24:08</div>
+                            </div>
+                            <!-- Timeline tracks -->
+                            <div class="tracks">
+                                <div class="track video-track">
+                                    <div class="clip clip-1">Intro_01.mp4</div>
+                                    <div class="clip clip-2 highlight-clip">B_Roll_Cinematic.mov</div>
+                                </div>
+                                <div class="track audio-track">
+                                    <div class="clip audio-1">Background_Score.wav</div>
+                                </div>
+                                <div class="track audio-track">
+                                    <div class="clip audio-2">SFX_Whoosh.wav</div>
+                                    <div class="clip audio-3">Dialogue_Mic.wav</div>
+                                </div>
+                                <div class="playhead"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="expertise" class="expertise section-padding bg-alt">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2 class="section-title">My <span class="highlight">Arsenal</span></h2>
+                <p class="section-subtitle">The tools and techniques I use to manipulate the timeline.</p>
+            </div>
+            
+            <div class="bento-grid">
+                <!-- Large Item -->
+                <div class="bento-item bento-large glass-card fade-in">
+                    <div class="bento-content">
+                        <div class="skill-icon"><i data-lucide="scissors" size="40"></i></div>
+                        <h3>Timeline Mastery</h3>
+                        <p class="timeline-desc">Seamless J-Cuts, L-Cuts, and pacing that keeps the audience hooked. Every cut is intentional, every frame serves a purpose in the narrative.</p>
+                        
+                        <div class="mini-timeline">
+                            <div class="tracks">
+                                <div class="track video-track">
+                                    <div class="clip clip-1">Intro.mp4</div>
+                                    <div class="clip clip-2 highlight-clip">B_Roll.mov</div>
+                                </div>
+                                <div class="track audio-track">
+                                    <div class="clip audio-1">Score.wav</div>
+                                </div>
+                                <div class="track audio-track">
+                                    <div class="clip audio-2">SFX.wav</div>
+                                    <div class="clip audio-3">Mic.wav</div>
+                                </div>
+                                <div class="playhead"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Medium Item (Color Grading) -->
+                <div class="bento-item glass-card fade-in color-grading-card">
+                    <div class="bento-content">
+                        <div class="skill-icon"><i data-lucide="palette" size="40"></i></div>
+                        <h3>Color Grading</h3>
+                        <p>LUTs, Scopes, and precise white balancing for the perfect cinematic mood.</p>
+                    </div>
+                    <div class="color-spectrum"></div>
+                </div>
+
+                <!-- Medium Item (Motion Tracking) -->
+                <div class="bento-item glass-card fade-in motion-card">
+                    <div class="bento-content">
+                        <div class="skill-icon"><i data-lucide="video" size="40"></i></div>
+                        <h3>Motion Tracking</h3>
+                        <p>Pinpoint accuracy in keyframing and compositing elements.</p>
+                    </div>
+                    <div class="motion-path-visual">
+                        <svg viewBox="0 0 100 50" class="path-line">
+                            <path d="M 10 40 Q 30 10 50 30 T 90 20" fill="none" stroke="rgba(37, 99, 235, 0.3)" stroke-width="2" stroke-dasharray="4" />
+                        </svg>
+                        <div class="tracker-dot"></div>
+                        <div class="tracking-target">
+                            <i data-lucide="focus" size="80"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Large Item (Sound Design) -->
+                <div class="bento-item bento-wide glass-card fade-in sound-card">
+                    <div class="bento-content">
+                        <div class="skill-icon"><i data-lucide="volume-2" size="40"></i></div>
+                        <h3>Sound Design</h3>
+                        <p>Audio mixing, Foley integration, and waveform manipulation for immersive experiences.</p>
+                    </div>
+                    <div class="sound-wave">
+                        <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                        <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="contact" class="footer">
+        <div class="container">
+            <h2 class="footer-title">Let's <span class="highlight">Render</span> Together</h2>
+            <div class="social-links">
+                <a href="https://www.instagram.com/ajmal_.arr/" target="_blank" rel="noopener" class="social-btn glass-card">
+                    <span class="icon"><i data-lucide="user"></i></span> Personal (@ajmal_.arr)
+                </a>
+                <a href="https://www.instagram.com/ft.nuisence/" target="_blank" rel="noopener" class="social-btn glass-card">
+                    <span class="icon"><i data-lucide="clapperboard"></i></span> Edited Content (@ft.nuisence)
+                </a>
+            </div>
+            <p class="copyright">&copy; 2026 Ajmal Ar. All frames reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Instagram Embed Script -->
+    <script async src="//www.instagram.com/embed.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
