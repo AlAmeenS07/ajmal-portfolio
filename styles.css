@@ -786,7 +786,7 @@ a {
 /* Gallery / Vault Section - Embed Grid */
 .relative-section { position: relative; overflow: hidden; }
 
-.instagram-embed-grid {
+.reels-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 2.5rem;
@@ -795,20 +795,26 @@ a {
     justify-items: center;
 }
 
-.embed-wrapper {
+.reel-item {
     width: 100%;
     max-width: 400px;
-    border-radius: 12px;
-    overflow: hidden;
-    background: white;
-    padding: 10px;
 }
 
-/* Stagger effect */
-@media (min-width: 768px) {
-    .item-down { transform: translateY(40px); }
-    .item-down:hover { transform: translateY(30px); }
+.section-line {
+    width: 60px;
+    height: 4px;
+    background: var(--accent-blue);
+    margin: 1rem auto;
+    border-radius: 2px;
 }
+
+.section-desc {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 
 .btn-large {
     padding: 1.1rem 3rem;
@@ -880,17 +886,6 @@ a {
     margin-bottom: -0.2em;
 }
 
-/* Animations */
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-.fade-in.appear {
-    opacity: 1;
-    transform: translateY(0);
-}
 
 /* Responsive */
 @media (max-width: 992px) {

@@ -10,37 +10,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Intersection Observer for scroll animations (fade in)
-    // Grab all elements that need to fade in, plus specific elements that should have it added automatically
-    const fadeElements = document.querySelectorAll('.fade-in, .skill-card, .about-text, .ig-card, .section-title');
-    
-    // Ensure all target elements have the base fade-in class
-    fadeElements.forEach(el => {
-        if (!el.classList.contains('fade-in')) {
-            el.classList.add('fade-in');
-        }
-    });
-
-    const appearOptions = {
-        threshold: 0.15,
-        rootMargin: "0px 0px -50px 0px"
-    };
-
-    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) {
-                return;
-            } else {
-                entry.target.classList.add('appear');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, appearOptions);
-
-    fadeElements.forEach(el => {
-        appearOnScroll.observe(el);
-    });
-
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
